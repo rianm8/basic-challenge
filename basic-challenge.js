@@ -2,9 +2,6 @@
 const x = Math.floor(Math.random() * 100);
 console.log(x);
 
-console.log("Ganteng");
-
-console.log("");
 //Generate Random String
 const upperCase ='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const lowwerCase = 'abcdefghijklmnopqrstuvwxyz';
@@ -21,24 +18,25 @@ for ( let i = 0; i < 10; i++ ) {
 console.log(random);
 
 
-console.log("");
 //Split String into Array
 const str = "Upin:Ipin:Meimei";
 console.log(str.split(':'));
 
 
-console.log("");
 //Detect a Leap Year
 let year = 2020;
 
-if(year % 4 === 0){
+if(year % 4 != 0){
+    console.log(year + " is a Common Year");
+}else if(year % 100 != 0){
     console.log(year + " is a Leap Year");
+}else if(year % 400 != 0){
+    console.log(year + " is a Common Year");
 }else{
-    console.log(year + " is not a Leap Year");
+    console.log(year + " is a Leap Year");
 }
 
 
-console.log("");
 //Print Object
 let murid = [
     {
@@ -60,7 +58,6 @@ for(let i = 0;i < murid.length;i++){
 }
 
 
-console.log("");
 //Classification
 let warga = [
     {
@@ -155,7 +152,6 @@ console.log("Student : " + wargaJadi.status.student);
 console.log("Employee : " + wargaJadi.status.employee);
 
 
-console.log("");
 //Find A
 let word = "Tongkol";
 let loop = 3;
