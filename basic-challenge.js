@@ -2,6 +2,7 @@
 const x = Math.floor(Math.random() * 100);
 console.log(x);
 
+console.log("Ganteng");
 
 console.log("");
 //Generate Random String
